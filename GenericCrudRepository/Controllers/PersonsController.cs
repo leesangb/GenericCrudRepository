@@ -3,9 +3,9 @@ using GenericCrudRepository.Repositories;
 
 namespace GenericCrudRepository.Controllers
 {
-    public class PersonController : AController<PersonDto>
+    public class PersonsController : AController<PersonDto>
     {
-        public PersonController(IRepository<PersonDto> repository) : base(repository)
+        public PersonsController(IRepository<PersonDto> repository) : base(repository)
         {
         }
     }
