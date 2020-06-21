@@ -32,6 +32,8 @@ namespace GenericCrudRepository
 
             services.AddScoped<IRepository<PersonDto>, PersonRepository>();
             services.AddScoped<IMapper<Person, PersonDto>, PersonMapper>();
+            services.AddScoped<IRepository<AnimalDto>, AnimalRepository>();
+            services.AddScoped<IMapper<Animal, AnimalDto>, AnimalMapper>();
 
             services.AddSwaggerGen(c =>
             {

@@ -10,5 +10,6 @@ namespace GenericCrudRepository.DataAccess
         public MyContext(DbContextOptions<MyContext> options): base(options) {}
 
         public virtual DbSet<Person> Persons { get; set; }
+        public virtual DbSet<Animal> Animals { get; set; }
     }
 }
